@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-   - source: /
-     destination: /var/www/html
+   - source: /index.html
+     destination: /var/www/html/index.html
 permissions:
    - object: /var/www/html
      pattern: "**"
