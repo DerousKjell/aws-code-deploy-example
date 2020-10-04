@@ -1,0 +1,15 @@
+1) Create a new pipeline
+2) Pipeline settings
+    - Create a new service role or re-use an existing one 
+3) Source stage settings
+    - Choose a source provider, in my example we use github
+    - Select the repository name
+    - select the branch
+4) Build stage
+    - Skip build stage
+5) Deploy stage
+    - Select AWS CodeDeploy
+    - Select the application we created in code-deploy.txt
+    - Select the deployment group we created in code-deploy.txt
+6) Launch!
+7) You can test this by navigating to the public IP address of the EC2 instance. The index.html will be hosted there

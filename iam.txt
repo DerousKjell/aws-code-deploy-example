@@ -1,0 +1,17 @@
+1) Create a new customer managed policy with the following json:
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        }
+    ]
+}
+
+2) Create a new role for the ec2 services and attach it with the customer managed policy from step 1.
+3) Create a new role for the codedeploy services and attach it with the aws managed policy 'AWSCodeDeployRole'

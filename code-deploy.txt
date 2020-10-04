@@ -1,0 +1,10 @@
+1. Create a new application
+2. Create a deployment group in the application
+   - enter deployment group name
+   - at service role, select the role we created at step 3 in iam.txt 
+   - at deployment type, select in-place
+   - at environment configuration, select amazon ec2 instances
+        - when we configured the ec2 instance we added a tag. re-use the tag here (fe. key 'name', value 'deployment-instances')
+   - at deployment settings, select CodeDeployDefault.AllAtOnce
+   - at load balancer, disable load balancing
+   - create deployment group

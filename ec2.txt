@@ -1,0 +1,8 @@
+1. Create a new ec2 instance with the free tier AmazOn Linux AMI
+2. Choose t2.micro instance type
+3. Attach the IAM role which we created at step2 in the iam.txt file
+4. append the content from the on-boot-bash-script.txt as a configuration script in the advanced settings section
+4. Add a tag so we can identify this instance in the codedeploy steps. For example, key: 'name', value: 'deployment-instances'
+5. Add a security group which allows SSH and HTTP (for testing)
+6. download the pem-key (or confirm you have an existing one available)
+7. launch instance
