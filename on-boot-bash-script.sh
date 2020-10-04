@@ -1,5 +1,4 @@
 #!/bin/bash
-su
 yum -y update
 yum -y install ruby wget httpd 
 chkconfig httpd on  
